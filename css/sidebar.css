@@ -1,0 +1,113 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar-box {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    padding: 1.2rem;
+}
+
+.sidebar-box h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+}
+
+.sidebar-box > p {
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.email-form input {
+    width: 100%;
+    padding: 0.65rem;
+    background: #111111;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    color: white;
+    outline: none;
+}
+
+.email-form button {
+    border: none;
+    padding: 0.65rem;
+    border-radius: var(--border-radius);
+    background: var(--color-primary);
+    color: #111111;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.email-form button:hover {
+    opacity: 0.85;
+}
+
+.categorias {
+    list-style: none;
+}
+
+.categorias li {
+    border-bottom: 1px solid var(--color-divisor);
+}
+
+.categorias li:last-child {
+    border-bottom: none;
+}
+
+.categorias a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.categorias a:hover {
+    color: var(--color-primary);
+}
+
+.categorias span {
+    color: var(--color-text-muted);
+}
+
+.editor-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.editor-foto {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #111111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 900;
+}
+
+.editor-info strong {
+    font-size: 0.8rem;
+}
+
+.editor-info p {
+    margin-top: 0.3rem;
+    color: var(--color-text-muted);
+    font-size: 0.7rem;
+}

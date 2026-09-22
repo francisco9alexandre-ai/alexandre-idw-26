@@ -3,38 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogTech - Navbar</title>
+
+    <title>BlogTech</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body>
 
 <header class="site-header">
-
     <nav class="nav-inner">
-
         <a href="#" class="nav-logo">BlogTech</a>
 
         <ul class="nav-links">
-            <li><a href="Início">Início</a></li>
-            <li><a href="Artigos">Artigos</a></li>
-            <li><a href="Sobre">Sobre</a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#artigos">Artigos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
         </ul>
 
         <div class="nav-actions">
             <a href="#" class="btn-entrar">Entrar</a>
-
-            <button class="btn-search">
+            <button class="btn-search" aria-label="Pesquisar">
                 <span class="material-symbols-outlined">search</span>
             </button>
         </div>
-
     </nav>
-
 </header>
+
+<main>
+    <section class="hero-section" id="inicio">
+        <div class="hero-container">
+            <div class="hero-titulo-wrapper">
+                <h1 class="hero-titulo">Bem-vindo ao Nosso Blog</h1>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-valor">500 Comentários</span>
+                    <span class="stat-descricao">Interação ativa</span>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-valor">10k Visualizações</span>
+                    <span class="stat-descricao">Alcance global</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="conteudo" id="artigos">
+        <div class="artigos">
+            <article class="card">
+                <div class="card-imagem imagem-1">DESIGN</div>
+                <div class="card-texto">
+                    <small>12 OUT 2026</small>
+                    <h2>As tendências de design para 2026</h2>
+                    <p>Explorando como a tecnologia está mudando a forma de criar novos projetos.</p>
+                    <a href="#">Ler mais →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagem imagem-2">TECH NEWS</div>
+                <div class="card-texto">
+                    <small>10 OUT 2026</small>
+                    <h2>O futuro dos sistemas operacionais</h2>
+                    <p>Novas tecnologias estão mudando a forma como usamos nossos computadores.</p>
+                    <a href="#">Ler mais →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagem imagem-3">CARREIRA</div>
+                <div class="card-texto">
+                    <small>08 OUT 2026</small>
+                    <h2>Designers no comando de startups</h2>
+                    <p>Como criatividade e tecnologia podem ajudar novos negócios.</p>
+                    <a href="#">Ler mais →</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagem imagem-4">ESTILO</div>
+                <div class="card-texto">
+                    <small>06 OUT 2026</small>
+                    <h2>A estética do Cyber-Chic</h2>
+                    <p>Um pouco sobre as novas tendências visuais do mundo digital.</p>
+                    <a href="#">Ler mais →</a>
+                </div>
+            </article>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <h3>Fique por dentro</h3>
+                <p>Receba novidades diretamente no seu e-mail.</p>
+
+                <form class="email-form">
+                    <input type="email" placeholder="Seu melhor e-mail">
+                    <button type="submit">Inscrever-se</button>
+                </form>
+            </div>
+
+            <div class="sidebar-box">
+                <h3>Categorias</h3>
+
+                <ul class="categorias">
+                    <li><a href="#">Design <span>4</span></a></li>
+                    <li><a href="#">Tecnologia <span>8</span></a></li>
+                    <li><a href="#">Carreira <span>5</span></a></li>
+                    <li><a href="#">Programação <span>6</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-box editor">
+                <h3>Editor chefe</h3>
+
+                <div class="editor-info">
+                    <div class="editor-foto">GM</div>
+
+                    <div>
+                        <strong>Francisco Alexandre</strong>
+                        <p>Editor e criador do BlogTech.</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+</main>
+
+<footer class="site-footer" id="sobre">
+    <div class="footer-container">
+        <a href="./index.html" class="footer-brand">BlogTech</a>
+
+        <nav class="footer-nav">
+            <a href="#">Privacidade</a>
+            <a href="#">Termos</a>
+            <a href="#">Contato</a>
+        </nav>
+
+        <p class="footer-copy">© 2026 BlogTech. Todos os direitos reservados.</p>
+    </div>
+</footer>
 
 </body>
 </html>
